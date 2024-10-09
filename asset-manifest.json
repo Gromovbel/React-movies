@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/Gromovbel.github.io/React-movies/static/css/main.a2573f0a.css",
+    "main.js": "/Gromovbel.github.io/React-movies/static/js/main.a526cb42.js",
+    "index.html": "/Gromovbel.github.io/React-movies/index.html",
+    "main.a2573f0a.css.map": "/Gromovbel.github.io/React-movies/static/css/main.a2573f0a.css.map",
+    "main.a526cb42.js.map": "/Gromovbel.github.io/React-movies/static/js/main.a526cb42.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.a2573f0a.css",
+    "static/js/main.a526cb42.js"
+  ]
+}
