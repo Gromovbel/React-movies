@@ -12,7 +12,7 @@ class Main extends React.Component {
   };
 
   componentDidMount() {
-    fetch(`http://www.omdbapi.com/?apikey=${API_KEY}&s=matrix`)
+    fetch(`https://www.omdbapi.com/?apikey=${API_KEY}&s=matrix`)
       .then((response) => response.json())
       .then((data) => this.setState({ movies: data.Search, loading: false }));
   }
@@ -20,15 +20,15 @@ class Main extends React.Component {
   searchMovies = (str, type) => {
     this.setState({ loading: true });
     if (str && type) {
-      fetch(`http://www.omdbapi.com/?apikey=${API_KEY}&s=${str}&type=${type}`)
+      fetch(`https://www.omdbapi.com/?apikey=${API_KEY}&s=${str}&type=${type}`)
         .then((response) => response.json())
         .then((data) => this.setState({ movies: data.Search, loading: false }));
     } else if (!str && type) {
-      fetch(`http://www.omdbapi.com/?apikey=${API_KEY}&s=matrix&type=${type}`)
+      fetch(`https://www.omdbapi.com/?apikey=${API_KEY}&s=matrix&type=${type}`)
         .then((response) => response.json())
         .then((data) => this.setState({ movies: data.Search, loading: false }));
     } else if (str && !type) {
-      fetch(`http://www.omdbapi.com/?apikey=${API_KEY}&s=${str}`)
+      fetch(`https://www.omdbapi.com/?apikey=${API_KEY}&s=${str}`)
         .then((response) => response.json())
         .then((data) => this.setState({ movies: data.Search, loading: false }));
     }
